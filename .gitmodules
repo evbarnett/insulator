@@ -1,0 +1,3 @@
+[submodule "EnlighterJS"]
+	path = EnlighterJS
+	url = https://github.com/EnlighterJS/EnlighterJS
