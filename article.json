@@ -1,0 +1,22 @@
+{
+	"title": "My Article Title", //required
+	"url": "my-art-title",
+	"article-template": "article-template.html", //required
+	"date": "(should be in sitemap date format)", //required
+	"article-content": "test.md", //required
+	"article-metatag": "Meta tag for this article...",
+	"block-robots": "true", //default: false
+	"alt-tags": [
+		{
+			"name": "blah.jpg",
+			"tag": "My tag is here..."
+		}
+	]
+}
+
+//TODO: Generate url from title
+//TODO: ADD date_string_format
+//TODO: Sanitize all injectable fields
+//TODO: SEO Optimization tools
+//TODO: Google Analytics
+//TODO: Allow a more simple version of MD
