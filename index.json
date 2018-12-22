@@ -1,9 +1,4 @@
 {
-	"index_template": "index-template.html", //required
-	"element_template": "element-template.html", //required
-	"domain_name": "", //required if generate-sitemap = true
-	"generate_sitemap": "false", //default: false
-	"generate_robots": "false", //default: false
-	"sort_by": "date_new_first | date_old_first | title_alpha | title_reverse_alpha", //default: date-new-first
-	"url_max_length": 25, //default: 32
+	"index_template": "index_template.html",
+	"element_template": "element_template.html"
 }
