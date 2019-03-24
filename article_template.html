@@ -3,9 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 		<link rel="stylesheet" type="text/css" href="EnlighterJS-2.12.0/Build/EnlighterJS.min.css" />
 		<script type="text/javascript" src="EnlighterJS-2.12.0/Resources/MooTools.min.js"></script>
 		<script type="text/javascript" src="EnlighterJS-2.12.0/Build/EnlighterJS.min.js"></script>
@@ -28,30 +26,20 @@
 				margin-top: 16px; 
 				padding-top: 16px;
 			}
-			.h2-t {
-				font-family: 'Crimson Text', serif;
-			}
-			.i-pf {
-				font-family: 'Crimson Text', serif;
-			}
 		</style>
 		<meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript" data-indent="2" data-selector-block="pre" data-selector-inline="code"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 	</head>
-	<body>
-		<div class="blog-breadcrumb">
-			<ul class="uk-breadcrumb">
-    			<li class="i-pf">{{breadcrumb}}</li>
-			</ul>
-		</div>
+	<body class="">
+		
 		<div class="blog-content">
 
-    		<h1 class="remove-bottom h2-t">{{title}}</h1> 
-    		<i class="i-pf">{{date}}</i><i class="i-pf"> -- {{tags}}</i><br>
+    		<h1 class="remove-bottom">{{title}}</h1> 
+    		<i>{{date}}</i><i> -- {{tags}}</i><br>
 
 			{{content}}
-
-		<p class="uk-article-meta"> This site was built with love by <a href="https://www.github.com/evbarnett"><font color="blue">@evbarnett</font> and uses <a href="https://enlighterjs.org/"><font color="blue">EnlighterJS</font></a> and <a href="https://getuikit.com/"><font color="blue">UIKit</font></a> <p>
+            
+            <p class="uk-article-meta"> This site was built by <a href="https://www.github.com/evbarnett"><font color="blue">@evbarnett</font></a></p>
 		
 		</div>
 	</body>
