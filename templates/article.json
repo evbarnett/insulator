@@ -1,9 +1,0 @@
-{
-	"title": "Example Article",
-	"url": "example_article.html",
-	"template": "article_template.html",
-	"md": "article.md",
-	"breadcrumb": "evbarnett.com / Example Article",
-	"date": "Dec 21, 2018",
-	"tags": "Python, HTML"
-}
