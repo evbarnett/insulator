@@ -3,22 +3,23 @@ import markdown2
 import json
 
 def main():
-	folder_path = sys.argv[1]
-	jsons = get_json(folder_path)
+	input_folder_path = sys.argv[1]
+	ouput_folder_path = sys.argv[2]
+	jsons = get_json(input_folder_path)
 	for json_f in jsons:
 		print("Handling {}".format(json_f))
 		data = read_file(json_f)
 		if "index.json" in json_f:
-			handle_index_json(data, folder_path)
+			handle_index_json(data, input_folder_path, ouput_folder_path)
 		else:
-			handle_json(data, folder_path)
+			handle_json(data, input_folder_path, ouput_folder_path)
 
 def read_file(filename):
 	with open(filename, "r") as file:
 		data = file.read()
 	return data
 
-def handle_index_json(index_json_data, folder_path):
+def handle_index_json(index_json_data, folder_path, output_path):
 	jdict = json.loads(index_json_data)
 	element_f = None
 	index_f = None
@@ -53,11 +54,11 @@ def handle_index_json(index_json_data, folder_path):
 		if key != "md" and key != "template":
 			index_d = template(index_d, key, value)
 
-	with open(folder_path + "/index.html", "w") as file:
+	with open(output_path + "/index.html", "w") as file:
 		file.write(index_d)
 		
 
-def handle_json(json_data, folder_path):
+def handle_json(json_data, folder_path, ouput_folder_path):
 	jdict = json.loads(json_data)
 	markdown_f = None
 	template_f = None
@@ -81,7 +82,7 @@ def handle_json(json_data, folder_path):
 			temp_d = template(temp_d, key, value)
 
 	# save temp_d as url_str
-	with open(folder_path + "/" + url_str, "w") as file:
+	with open(ouput_folder_path + "/" + url_str, "w") as file:
 		file.write(temp_d)
 
 
